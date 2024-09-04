@@ -1,0 +1,39 @@
+pattern_params {
+  pattern_name: "WPT $patternName"
+  pattern_type: "$patternType"
+  scatterpoint_pattern {
+  pose_params {
+    x: "$x"
+    y: "$y"
+    z: "$z"
+    rx: "$rx"
+    ry: "$ry"
+    rz: "$rz"
+    coord_type: "$coordType"
+    coord_ref: "$coordRef"
+    use_quaternion: false
+    overwrite_preferJntPos: true
+    preferJntPos {
+        joint1: "$A1"
+        joint2: "$A2"
+        joint3: "$A3"
+        joint4: "$A4"
+        joint5: "$A5"
+        joint6: "$A6"
+        joint7: "$A7"
+      }
+    }
+    force_params {
+      fx: "$fx"
+      fy: "$fy"
+      fz: "$fz"
+      mx: "$mx"
+      my: "$my"
+      mz: "$mz"
+    }
+    path_profile: "$pathProf"
+    blend_zone: "Z$blendZone"
+    velocity: "$vel"
+    acceleration: "$acc"
+  }
+}
